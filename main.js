@@ -60,7 +60,7 @@ function playStream(idVideoTag, stream) {
 
 const peer = new Peer({ 
     key: 'peerjs', 
-    host: 'uitshopstrem.herokuapp.com', 
+    host: 'uitshopstream.herokuapp.com', 
     secure: true, 
     port: 443, 
     config: customConfig 
