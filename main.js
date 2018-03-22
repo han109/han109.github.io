@@ -1,4 +1,4 @@
-const socket = io('https://localhost:3000');
+const socket = io('https://uitshopstrem.herokuapp.com/');
 
 $('#div-chat').hide();
 
@@ -60,7 +60,7 @@ function playStream(idVideoTag, stream) {
 
 const peer = new Peer({ 
     key: 'peerjs', 
-    host: 'uitshopstream.herokuapp.com', 
+    host: 'uitshopstrem.herokuapp.com', 
     secure: true, 
     port: 443, 
     config: customConfig 
