@@ -7,9 +7,9 @@ let customConfig;
 $.ajax({
   url: "https://service.xirsys.com/ice",
   data: {
-    ident: "vanpho",
-    secret: "2b1c2dfe-4374-11e7-bd72-5a790223a9ce",
-    domain: "vanpho93.github.io",
+    ident: "ngochan",
+    secret: "ee406ed4-2de4-11e8-aba7-c5f3d248a5fe",
+    domain: "han109.github.io",
     application: "default",
     room: "default",
     secure: 1
@@ -60,7 +60,7 @@ function playStream(idVideoTag, stream) {
 
 const peer = new Peer({ 
     key: 'peerjs', 
-    host: 'mypeer3005.herokuapp.com', 
+    host: 'uitshopstream.herokuapp.com', 
     secure: true, 
     port: 443, 
     config: customConfig 
