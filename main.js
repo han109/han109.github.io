@@ -22,6 +22,7 @@ $.ajax({
   async: false
 });
 
+
 socket.on('DANH_SACH_ONLINE', arrUserInfo => {
     $('#div-chat').show();
     $('#div-dang-ky').hide();
@@ -45,7 +46,7 @@ socket.on('DANG_KY_THAT_BAT', () => alert('Vui long chon username khac!'));
 
 
 function openStream() {
-    const config = { audio: false, video: true };
+    const config = { audio: true, video: true };
     return navigator.mediaDevices.getUserMedia(config);
 }
 
@@ -65,7 +66,6 @@ const peer = new Peer({
     port: 443, 
     config: customConfig 
 });
-
 peer.on('open', id => {
     $('#my-peer').append(id);
     $('#btnSignUp').click(() => {
